@@ -3,6 +3,8 @@ const { clientId, guildId, token } = require('./config.json');
 const fs = require('node:fs');
 const path = require('node:path');
 
+console.log("Imported required files.");
+
 const commands = [];
 // Grab all the command files from the commands directory you created earlier
 const foldersPath = path.join(__dirname, 'commands');
@@ -23,6 +25,8 @@ for (const folder of commandFolders) {
         }
     }
 }
+
+console.log("Commands ok.");
 
 // Construct and prepare an instance of the REST module
 const rest = new REST().setToken(token);
