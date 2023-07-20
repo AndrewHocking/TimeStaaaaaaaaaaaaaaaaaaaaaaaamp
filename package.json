@@ -11,5 +11,8 @@
   "dependencies": {
     "chrono-node": "^2.6.4",
     "discord.js": "^14.11.0"
+  },
+  "engines": {
+    "node": ">=16.9.0"
   }
 }
